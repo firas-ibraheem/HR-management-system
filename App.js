@@ -1,7 +1,7 @@
 var Id = 999;
 emp1 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -15,7 +15,7 @@ emp1 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
 
 
@@ -24,7 +24,7 @@ emp1 = {
 }
 emp2 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     this.EmployeeID = counter +1;
     ++Id;
     },
@@ -38,7 +38,7 @@ emp2 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
    
 
 
@@ -46,7 +46,7 @@ emp2 = {
 }
 emp3 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -60,13 +60,13 @@ emp3 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
     }
 }
 emp4 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -80,7 +80,7 @@ emp4 = {
         let salary = Math.floor(Math.random()*(1500 - 1000) + 1500);
         taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
     
 
 
@@ -88,7 +88,7 @@ emp4 = {
 }
 emp5 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -102,14 +102,14 @@ emp5 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
 
     }
 }
 emp6 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -130,7 +130,7 @@ emp6 = {
 }
 emp7 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
