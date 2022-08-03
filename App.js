@@ -7,6 +7,7 @@ emp1 = {
     ++Id;
     },
     FullName : "Ghazi Samer",
+    imgUrl : URL(`https://www.istockphoto.com/photos/administrator`),
     Department:"Administration",
     Level:"Senior",
     salary : 0,
@@ -18,18 +19,20 @@ emp1 = {
 
 
     }
+
 }
 emp2 = {
     EmployeeID :0,
     uniqueId : function(counter){
-    
     this.EmployeeID = counter +1;
     ++Id;
     },
     FullName : "Lana Ali",
     Department:"Finance",
     Level:"Senior",
+    imgUrl : URL(`https://stocksnap.io/search/finance`),
     salary : 0,
+    
     getRandomSenior: function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSal = salary - (salary*0.075); 
@@ -50,6 +53,7 @@ emp3 = {
     Department:"Marketing",
     Level:"Senior",
     salary : 0,
+    imgUrl : URL(`https://thinkerscommunications.com/marketing/`),
     getRandomSenior: function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSal = salary - (salary*0.075); 
@@ -70,6 +74,7 @@ emp4 = {
     Department:"Administration",
     Level:"Mid-Senior",
     salary : 0,
+    imgUrl : URL(`https://www.shutterstock.com/search/administration`),
     getRandomSenior: function(){
         let salary = Math.floor(Math.random()*(1500 - 1000) + 1500);
         let taxedSal = salary - (salary*0.075); 
@@ -90,6 +95,7 @@ emp5 = {
     Department:"Development	",
     Level:"Senior",
     salary : 0,
+    imgUrl : URL(`https://pixabay.com/images/search/developer/`),
     getRandomSenior: function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSal = salary - (salary*0.075); 
@@ -110,6 +116,7 @@ emp6 = {
     Department:"Development	",
     Level:"	Junior",
     salary : 0,
+    imgUrl : URL(`https://www.istockphoto.com/photos/developer`),
     getRandomSenior: function(min,max){
         let salary = Math.floor(Math.random(1000 - 500) + 500);
         let taxedSal = salary - (salary*0.075); 
@@ -130,6 +137,7 @@ emp7 = {
     Department:"Finance	",
     Level:"	Mid-Senior",
     salary : 0,
+    imgUrl : URL(`https://www.shutterstock.com/search/finance`),
     getRandomSenior: function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSal = salary - (salary*0.075); 
