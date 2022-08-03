@@ -1,161 +1,43 @@
-// var Id = 999;
-// emp1 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Ghazi Samer",
-//     imgUrl : URL(`https://www.istockphoto.com/photos/administrator`),
-//     Department:"Administration",
-//     Level:"Senior",
-//     salary : 0,
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
+'use strict';
 
+function Employees ( employeeID,fullName,imgUrl,Department,level,salary){
+    this.employeeID = employeeID;
+    this.fullName = fullName;
+    this.imgUrl = imgUrl;
+    this.Department = Department;
+    this.level = level;
+    this.salary = salary;
+    this.uniqId = function(counter){
+        this.EmployeeID = counter +1;
+    ++Id;
+    },
+    this.taxedsal = function(min,max){
+        let salary = Math.floor(Math.random()*(max- min)+ min);
+        taxedSalary = salary - (salary*0.075); 
+        this.salary = taxedSalary;
+       
+    }
 
-//     }
+}
+Employees.prototype.render = function(){
+    document.write("Employee name:",this.fullName);
+    document.write("Department:",this.Department);
+    document.write("Employee salary",this.taxedsal);
 
-// }
-// emp2 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Lana Ali",
-//     Department:"Finance",
-//     Level:"Senior",
-//     imgUrl : URL(`https://stocksnap.io/search/finance`),
-//     salary : 0,
-    
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
+}
 
+const emp1 = new Employees(this.uniqId,"Ghazi Samer",'https://cdnblog.filecloud.com/blog/wp-content/uploads/2018/04/administrator1.jpg',"Administration","Senior",this.taxedsal);
+const emp2 = new Employees(this.uniqId,"Lana Ali",'https://image.shutterstock.com/image-photo/business-concept-two-mans-working-600w-1116352550.jpg',"Finance","Senior",this.taxedsal);
+const emp3 = new Employees(this.uniqId,"Tamara Ayoub",'https://media.istockphoto.com/photos/digital-marketing-concept-online-advertisement-picture-id1284549946?s=612x612',"Marketing","Senior",this.taxedsal);
+const emp4 = new Employees(this.uniqId,"Safi Walid",'https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/07/03070917/system-administrator-job-description-and-career-1024x512.jpg',"Administration","Mid-Senior",this.taxedsal);
+const emp5 = new Employees(this.uniqId,"Omar Zaid",'https://media.istockphoto.com/photos/programmer-working-with-program-code-picture-id1075599562',"Development","Senior",this.taxedsal);
+const emp6 = new Employees(this.uniqId,"Rana Saleh",'https://media.istockphoto.com/photos/computer-programmer-working-on-new-software-program-picture-id1212006391?s=612x612',"Development","Junior",this.taxedsal);
+const emp7 = new Employees(this.uniqId,"Hadi Ahmad",'https://image.shutterstock.com/image-photo/woman-accountant-use-calculator-computer-600w-1697077897.jpg',"Finance","Mid-Senior",this.taxedsal);
 
-//     }
-// }
-// emp3 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Tamara Ayoub",
-//     Department:"Marketing",
-//     Level:"Senior",
-//     salary : 0,
-//     imgUrl : URL(`https://thinkerscommunications.com/marketing/`),
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
-
-
-//     }
-// }
-// emp4 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Safi Walid",
-//     Department:"Administration",
-//     Level:"Mid-Senior",
-//     salary : 0,
-//     imgUrl : URL(`https://www.shutterstock.com/search/administration`),
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(1500 - 1000) + 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
-
-
-//     }
-// }
-// emp5 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Omar Zaid",
-//     Department:"Development	",
-//     Level:"Senior",
-//     salary : 0,
-//     imgUrl : URL(`https://pixabay.com/images/search/developer/`),
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
-
-
-//     }
-// }
-// emp6 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Rana Saleh",
-//     Department:"Development	",
-//     Level:"	Junior",
-//     salary : 0,
-//     imgUrl : URL(`https://www.istockphoto.com/photos/developer`),
-//     getRandomSenior: function(min,max){
-//         let salary = Math.floor(Math.random(1000 - 500) + 500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
-
-
-//     }
-// }
-// emp7 = {
-//     EmployeeID :0,
-//     uniqueId : function(counter){
-    
-//     this.EmployeeID = counter +1;
-//     ++Id;
-//     },
-//     FullName : "Hadi Ahmad",
-//     Department:"Finance	",
-//     Level:"	Mid-Senior",
-//     salary : 0,
-//     imgUrl : URL(`https://www.shutterstock.com/search/finance`),
-//     getRandomSenior: function(){
-//         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-//         let taxedSal = salary - (salary*0.075); 
-//         console.log("salary :" +salary);
-//         console.log("taxedSalary :" +taxedSal);
-
-
-//     }
-// }
-// console.log(emp1.FullName);
-// console.log(emp1.salary);
-// console.log(emp2.FullName);
-// console.log(emp2.salary);
-// console.log(emp3.FullName);
-// console.log(emp3.salary);
-// console.log(emp4.FullName);
-// console.log(emp4.salary);
-// console.log(emp5.FullName);
-// console.log(emp5.salary);
-// console.log(emp6.FullName);
-// console.log(emp6.salary);
+emp1.render();
+emp2.render();
+emp3.render();
+emp4.render();
+emp5.render();
+emp6.render();
+emp7.render();
