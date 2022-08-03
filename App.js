@@ -15,7 +15,7 @@ emp1 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
 
 
@@ -38,7 +38,7 @@ emp2 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
    
 
 
@@ -60,7 +60,7 @@ emp3 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
     }
 }
@@ -80,7 +80,7 @@ emp4 = {
         let salary = Math.floor(Math.random()*(1500 - 1000) + 1500);
         taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
     
 
 
@@ -102,7 +102,7 @@ emp5 = {
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
         let taxedSalary  = salary - (salary*0.075); 
         this.salary = taxedSalary;
-        console.log("salary :" +salary);
+       
 
 
     }
