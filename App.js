@@ -7,15 +7,16 @@ emp1 = {
     ++Id;
     },
     FullName : "Ghazi Samer",
-    imgUrl : URL(`https://www.istockphoto.com/photos/administrator`),
+    imgUrl :'https://cdnblog.filecloud.com/blog/wp-content/uploads/2018/04/administrator1.jpg',
     Department:"Administration",
     Level:"Senior",
     salary : 0,
-    getRandomSenior: function(){
+    getRandomSal :function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-        let taxedSal = salary - (salary*0.075); 
+        taxedSalary = salary - (salary*0.075); 
+        this.salary = taxedSalary;
         console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
+
 
 
     }
@@ -30,14 +31,15 @@ emp2 = {
     FullName : "Lana Ali",
     Department:"Finance",
     Level:"Senior",
-    imgUrl : URL(`https://stocksnap.io/search/finance`),
+    imgUrl :'https://image.shutterstock.com/image-photo/business-concept-two-mans-working-600w-1116352550.jpg',
     salary : 0,
     
-    getRandomSenior: function(){
+    getRandomSal :function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-        let taxedSal = salary - (salary*0.075); 
+        taxedSalary = salary - (salary*0.075); 
+        this.salary = taxedSalary;
         console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
+   
 
 
     }
@@ -53,13 +55,12 @@ emp3 = {
     Department:"Marketing",
     Level:"Senior",
     salary : 0,
-    imgUrl : URL(`https://thinkerscommunications.com/marketing/`),
-    getRandomSenior: function(){
+    imgUrl :'https://media.istockphoto.com/photos/digital-marketing-concept-online-advertisement-picture-id1284549946?s=612x612',
+    getRandomSal: function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-        let taxedSal = salary - (salary*0.075); 
+        taxedSalary  = salary - (salary*0.075); 
+        this.salary = taxedSalary;
         console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
-
 
     }
 }
@@ -74,12 +75,13 @@ emp4 = {
     Department:"Administration",
     Level:"Mid-Senior",
     salary : 0,
-    imgUrl : URL(`https://www.shutterstock.com/search/administration`),
-    getRandomSenior: function(){
+    imgUrl :'https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/07/03070917/system-administrator-job-description-and-career-1024x512.jpg',
+    getRandomSal :function(){
         let salary = Math.floor(Math.random()*(1500 - 1000) + 1500);
-        let taxedSal = salary - (salary*0.075); 
+        taxedSalary  = salary - (salary*0.075); 
+        this.salary = taxedSalary;
         console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
+    
 
 
     }
@@ -95,12 +97,12 @@ emp5 = {
     Department:"Development	",
     Level:"Senior",
     salary : 0,
-    imgUrl : URL(`https://pixabay.com/images/search/developer/`),
-    getRandomSenior: function(){
+    imgUrl :'https://media.istockphoto.com/photos/programmer-working-with-program-code-picture-id1075599562',
+    getRandomSal :function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-        let taxedSal = salary - (salary*0.075); 
+        let taxedSalary  = salary - (salary*0.075); 
+        this.salary = taxedSalary;
         console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
 
 
     }
@@ -116,12 +118,12 @@ emp6 = {
     Department:"Development	",
     Level:"	Junior",
     salary : 0,
-    imgUrl : URL(`https://www.istockphoto.com/photos/developer`),
-    getRandomSenior: function(min,max){
+    imgUrl :'https://media.istockphoto.com/photos/computer-programmer-working-on-new-software-program-picture-id1212006391?s=612x612',
+    getRandomSal :function(min,max){
         let salary = Math.floor(Math.random(1000 - 500) + 500);
-        let taxedSal = salary - (salary*0.075); 
-        console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
+        let taxedSalary  = salary - (salary*0.075); 
+        this.salary = taxedSalary;
+        
 
 
     }
@@ -137,16 +139,23 @@ emp7 = {
     Department:"Finance	",
     Level:"	Mid-Senior",
     salary : 0,
-    imgUrl : URL(`https://www.shutterstock.com/search/finance`),
-    getRandomSenior: function(){
+    imgUrl :'https://image.shutterstock.com/image-photo/woman-accountant-use-calculator-computer-600w-1697077897.jpg',
+    getRandomSal :function(){
         let salary = Math.floor(Math.random()*(2000 - 1500 )+ 1500);
-        let taxedSal = salary - (salary*0.075); 
-        console.log("salary :" +salary);
-        console.log("taxedSalary :" +taxedSal);
-
+        let taxedSalary = salary - (salary*0.075); 
+        this.salary = taxedSalary;
+        
+      
 
     }
 }
+emp1.getRandomSal();
+emp2.getRandomSal();
+emp3.getRandomSal();
+emp4.getRandomSal();
+emp5.getRandomSal();
+emp6.getRandomSal();
+emp7.getRandomSal();
 console.log(emp1.FullName);
 console.log(emp1.salary);
 console.log(emp2.FullName);
@@ -159,3 +168,5 @@ console.log(emp5.FullName);
 console.log(emp5.salary);
 console.log(emp6.FullName);
 console.log(emp6.salary);
+console.log(emp7.FullName);
+console.log(emp7.salary);
