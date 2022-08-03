@@ -1,7 +1,7 @@
 var Id = 999;
 emp1 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -24,7 +24,7 @@ emp1 = {
 }
 emp2 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     this.EmployeeID = counter +1;
     ++Id;
     },
@@ -46,7 +46,7 @@ emp2 = {
 }
 emp3 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -66,7 +66,7 @@ emp3 = {
 }
 emp4 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -88,7 +88,7 @@ emp4 = {
 }
 emp5 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -109,7 +109,7 @@ emp5 = {
 }
 emp6 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
@@ -130,7 +130,7 @@ emp6 = {
 }
 emp7 = {
     EmployeeID :0,
-    uniqueId : function(counter){
+    UniqueId : function(counter){
     
     this.EmployeeID = counter +1;
     ++Id;
