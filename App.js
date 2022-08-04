@@ -1,18 +1,29 @@
 
 'use strict';
 
-function Employees ( employeeID,fullName,imgUrl,Department,level,salary){
+function Employees ( employeeID,fullName,imgUrl,Department,level){
     this.employeeID = employeeID;
     this.fullName = fullName;
     this.imgUrl = imgUrl;
     this.Department = Department;
     this.level = level;
-    this.salary = salary;
+    this.salary = 0;
     this.uniqId = function(counter){
         this.EmployeeID = counter +1;
     ++Id;
     },
     this.taxedsal = function(min,max){
+        if (this.level == "Senior"){
+           let min = 1500;
+           let max = 2000;
+        } else if (this.level == "Mid-Senior" ){
+            let min = 1000;
+            let max = 1500;
+
+        }else {
+            let min = 500;
+            let max = 1000;
+        }
         let salary = Math.floor(Math.random()*(max- min)+ min);
         taxedSalary = salary - (salary*0.075); 
         this.salary = taxedSalary;
