@@ -1,3 +1,4 @@
+
 'use strict';
 
 function Employees ( employeeID,fullName,imgUrl,Department,level,salary){
@@ -24,7 +25,9 @@ Employees.prototype.render = function(){
     document.write("Department:",this.Department);
     document.write("Employee salary",this.taxedsal);
 
+
 }
+
 
 const emp1 = new Employees(this.uniqId,"Ghazi Samer",'https://cdnblog.filecloud.com/blog/wp-content/uploads/2018/04/administrator1.jpg',"Administration","Senior",this.taxedsal);
 const emp2 = new Employees(this.uniqId,"Lana Ali",'https://image.shutterstock.com/image-photo/business-concept-two-mans-working-600w-1116352550.jpg',"Finance","Senior",this.taxedsal);
@@ -41,3 +44,4 @@ emp4.render();
 emp5.render();
 emp6.render();
 emp7.render();
+
